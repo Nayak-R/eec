@@ -6,3 +6,34 @@
     background-color: brown;
     color: white;
 }
+
+.example-container {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(9, 59, 69);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .example-container button:hover{
+    background-color: rgb(26, 97, 112);
+  }
+  .example-container button{
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  
