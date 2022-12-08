@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
-    path :'',
+    path :'myprofile',
     loadChildren: () => import('./my-profile/my-profile.module').then(mod => mod.MyProfileModule)
   }
 ];

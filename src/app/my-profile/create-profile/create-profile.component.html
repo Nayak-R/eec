@@ -1,0 +1,48 @@
+<body>
+    <button class="add-career" data-toggle="modal" data-target="#exampleModal">Add Career Details</button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Career Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <select id="career" name="career" [(ngModel)]="profileData.careertype">
+                            <option value="car1">Car1</option>
+                            <option value="Car2">Car2</option>
+                            <option value="car3">Car3</option>
+                        </select>
+\
+                        <div *ngIf="profileData.careertype==='car1'">
+                            <label for="">Company Name</label>
+                            <input type="text" name="" id="">
+
+                            <label for="">Joining Academic Year</label>
+                            <input type="text" name="" id="">
+
+                            <label for="">Joining Date</label>
+                            <input type="text" name="" id="">
+
+                            <label for="">CTC</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="check()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
